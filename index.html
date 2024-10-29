@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p,
+      h1,
+      div {
+        margin: 1rem;
+      }
+      .greeting {
+        color: red;
+      }
+      .result {
+        color: blue;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .refresh {
+        background-color: purple;
+        color: white;
+        padding: 0.5rem;
+        display: inline;
+      }
+      .refresh:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Magic 8 Ball</h1>
+    <p class="greeting hidden">Hello</p>
+    <p class="result hidden"></p>
+    <form id="form">
+      <div>
+        <label for="form__name">Enter your name:</label>
+        <input type="text" id="form__name" required />
+      </div>
+      <div>
+        <label for="form__question">Ask me a question:</label>
+        <input type="text" id="form__question" required />
+      </div>
+      <div><button type="submit">Submit</button></div>
+    </form>
+    <div class="refresh hidden">Click to ask another question</div>
+    <script src="app.js"></script>
+  </body>
+</html>
